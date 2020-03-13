@@ -1,0 +1,4 @@
+C:\clients\UPS\BTS_Migration\HandsOn_Paas\Large_EDI\EdiSplitterFunc\EdiEngine.Common\bin\Debug-4.6.1\EdiEngine.Common.dll
+C:\clients\UPS\BTS_Migration\HandsOn_Paas\Large_EDI\EdiSplitterFunc\EdiEngine.Common\bin\Debug-4.6.1\EdiEngine.Common.pdb
+C:\clients\UPS\BTS_Migration\HandsOn_Paas\Large_EDI\EdiSplitterFunc\EdiEngine.Common\obj\Debug\EdiEngine.Common.dll
+C:\clients\UPS\BTS_Migration\HandsOn_Paas\Large_EDI\EdiSplitterFunc\EdiEngine.Common\obj\Debug\EdiEngine.Common.pdb
