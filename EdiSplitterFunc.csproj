@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="EdiEngine.Common\**" />
+    <Compile Remove="EdiEngine\**" />
+    <Compile Remove="EdiStandards\**" />
+    <EmbeddedResource Remove="EdiEngine.Common\**" />
+    <EmbeddedResource Remove="EdiEngine\**" />
+    <EmbeddedResource Remove="EdiStandards\**" />
+    <None Remove="EdiEngine.Common\**" />
+    <None Remove="EdiEngine\**" />
+    <None Remove="EdiStandards\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="EdiEngine.Common\EdiEngine.Common.csproj" />
+    <ProjectReference Include="EdiEngine\EdiEngine.csproj" />
+    <ProjectReference Include="EdiStandards\X12_004010\X12_004010.csproj" />
+    <ProjectReference Include="EdiStandards\X12_004030\X12_004030.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
